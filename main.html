@@ -1,46 +1,50 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	<form action="URL" method="post">
-		<label for="name" id="name">Text Input</label>
-		<input type="text" id="name">
-		<label for="email" id="email">Email Input</label>
-		<input type="email" id="email">
-		<label for="gender">Male</label>
-		<input type="radio" name="gender" id="male" value="Male">
-		<label for="gender">Female</label>
-		<input type="radio" name="gender" value="female" id="female">
-		<label for="laptop" >Dropdown(Apple, Asus, HP)</label>
-			<select name="laptops" id="laptops">
-				<option value="apple">Apple</option>
-				<option value="asus">Asus</option>
-				<option value="hp">HP</option>
-			</select>
-		<label for="age">number input</label>
-		<input type="number" id="age">
 
-		<label for="date">Date Input</label>
-		<input type="date" id="dob">
+<form method="post">
 
-		<label for="password">password input</label>
-		<input type="password" id="password">
+    <label for="name">Text Input</label>
+    <input type="text" id="name" required>
 
-		<label for="portfolio">URL input</label>
-		<input type="url" id="portfolio">
-		
-		<button type="submit">Submit</button>
-		
-		
-	</form>
-    <script type="text/javascript" src="./script.js"></script>
+    <label for="email">Email Input</label>
+    <input type="email" id="email" required>
 
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" value="Male" required>
+
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender" value="Female" required>
+
+    <label for="laptop">Dropdown (Apple, Asus, HP)</label>
+    <select id="laptop">
+        <option value="apple">Apple</option>
+        <option value="asus">Asus</option>
+        <option value="hp">HP</option>
+    </select>
+
+    <label for="age">Number Input</label>
+    <input type="number" id="age" required>
+
+    <label for="dob">Date Input</label>
+    <input type="date" id="dob" required>
+
+    <label for="password">Password Input</label>
+    <input type="password" id="password" required>
+
+    <label for="portfolio">URL Input</label>
+    <input type="url" id="portfolio">
+
+    <button type="submit">Submit</button>
+
+</form>
+
+<script src="./script.js"></script>
 </body>
 
 </html>
